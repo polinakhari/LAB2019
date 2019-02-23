@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT data (ips, accesses)>
+<!ELEMENT ips (ip, ip, ip, ip, ip)>
+<!ELEMENT ip EMPTY>
+<!ELEMENT accesses (pc_accesses, mobile_accesses)>
+<!ELEMENT pc_accesses (pc+)>
+<!ELEMENT mobile_accesses (mobile+)>
+<!ELEMENT pc EMPTY>
+<!ELEMENT mobile EMPTY>
+<!ATTLIST ip
+addr CDATA #REQUIRED
+frequency CDATA #REQUIRED
+>
+<!ATTLIST pc
+name CDATA #REQUIRED
+amount CDATA #REQUIRED
+>
+<!ATTLIST mobile
+name CDATA #REQUIRED
+amount CDATA #REQUIRED
+>

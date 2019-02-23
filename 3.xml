@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data PUBLIC "GossJS"  "http://kodaktor.ru/j/dtd_4634f">
+<data>
+<ips>
+<ip addr="077.234.203.101" frequency="12"/>
+<ip addr="005.144.096.251" frequency="11"/>
+<ip addr="081.222.086.058" frequency="6"/>
+<ip addr="005.164.066.173" frequency="4"/>
+<ip addr="091.122.189.004" frequency="4"/>
+</ips>
+
+<accesses>
+<pc_accesses>
+<pc name="Windows" amount="12"/>
+<pc name="Linux" amount="11"/>
+<pc name="MacOS" amount="6"/>
+</pc_accesses>
+
+<mobile_accesses>
+<mobile name="Windows" amount="12"/>
+<mobile name="Linux" amount="11"/>
+<mobile name="MacOS" amount="6"/>
+</mobile_accesses>
+</accesses>
+
+</data>
