@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mycompetencies PUBLIC "GossJS"  "http://kodaktor.ru/j/dtd_b8ee0">
+
+  <mycompetencies>
+
+    <competency>
+      <name>Protocols</name>
+      <value>Below Average</value>
+    </competency>
+
+    <competency>
+      <name>HTML</name>
+      <value>Good </value>
+    </competency>
+
+    <competency>
+      <name>CSS</name>
+      <value>Good</value>
+    </competency>
+
+    <competency>
+      <name>CSS preprocessors</name>
+      <value>Below Average</value>
+    </competency>
+
+    <competency>
+      <name>Gulp</name>
+      <value>Below Average</value>
+    </competency>
+
+    <competency>
+      <name>Data Bases</name>
+      <value>Below Average</value>
+    </competency>
+
+    <competency>
+      <name>JS</name>
+      <value>Bad</value>
+    </competency>
+
+    <competency>
+      <name>CMS</name>
+      <value>Bad</value>
+    </competency>
+
+  </mycompetencies>
