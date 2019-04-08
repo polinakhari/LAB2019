@@ -1,4 +1,3 @@
-Харионовская Полина, Веб-технологии, P4162-2
-
-FUNC-002 https://kodaktor.ru/func_cd841
-FUNC-003 https://kodaktor.ru/func_3896e
+Харионовская Полина, Веб-технологии, P4162-2 Задание - https://kodaktor.ru/22022019
+IIFE https://kodaktor.ru/iife_ec0d2
+JavaScript + XML https://kodaktor.ru/g/xmlt_3cbe2
