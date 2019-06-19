@@ -11,29 +11,11 @@ const budget = 50000,
 progressBar.style.width = 0;
 let purchaseAmount = 0;
 
-function colorProgressBar(fullness) {
-  if (fullness <= 50) {
-    progressBar.classList.add('bg-success');
-    progressBar.classList.remove('bg-warning');
-    progressBar.classList.remove('bg-danger');
-  } else if (fullness > 50 && fullness <= 85) {
-    progressBar.classList.add('bg-warning');
-    progressBar.classList.remove('bg-danger');
-    progressBar.classList.remove('bg-success');
-  } else {
-    progressBar.classList.add('bg-danger');
-    progressBar.classList.remove('bg-warning');
-    progressBar.classList.remove('bg-success');
-  }
-}
-
 budgetValueElement.textContent = budget;
 
 for (const goodElement of goodElements) {
   goodElement.addEventListener('dragstart', (event) => {
-    event.dataTransfer.setData(
-      'application/json',
-      JSON.stringify([event.target.children[3].dataset.price, event.target.id]),
+    event.dataTransfer.setData('application/json', JSON.stringify([event.target.children[3].dataset.price, event.target.id]),
     );
   });
 }
@@ -43,7 +25,6 @@ basketElement.addEventListener('drop', (event) => {
 
   if (data) {
     const [price, goodId] = JSON.parse(data);
-
     basketElement.dispatchEvent(new CustomEvent('order', {
       detail: {
         price,
@@ -62,7 +43,6 @@ basketElement.addEventListener('order', ({
   }
 }) => {
   const price = +stringPrice;
-  console.log(price);
 
   if (purchaseAmount + price > budget) {
     alert('Бюджет исчерпан');
@@ -90,6 +70,6 @@ basketElement.addEventListener('order', ({
     const fullness = (purchaseAmount / budget) * 100;
     progressBar.style.width = `${fullness}%`;
     document.getElementsByClassName('basket__progress-title')[0].innerHTML = "Итого: " + `${purchaseAmount}` + ' &#x20BD; ' + " Остаток: " + `${budget - purchaseAmount}` + ' &#x20BD;';
-    colorProgressBar(fullness);
+
   }
 });
